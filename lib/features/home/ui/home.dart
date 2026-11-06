@@ -10,6 +10,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  final HomeBlocBloc homeBlock = HomeBlocBloc();
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<HomeBlocBloc, HomeBlocState>(
